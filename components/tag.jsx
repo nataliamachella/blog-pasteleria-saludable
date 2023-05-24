@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function tag({ cat }) {
+  if (!cat) return "";
   if (cat == "Sin Gluten")
     return (
       <span className="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium  ring-1 ring-inset bg-pink-50 text-pink-700 ring-pink-700/10 ">

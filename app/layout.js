@@ -4,9 +4,9 @@ import { Poppins } from "next/font/google";
 const poppins = Poppins({ subsets: ["latin"], weight: ["100", "400", "800"] });
 
 export const metadata = {
-  title: "Pasteleria Saludable | Naty ",
+  title: "Blog de Recetas de Pasteleria Saludable | Naty ",
   description:
-    "Pastelería Saludable sin gluten, sin lácteos, sin azúcar y sin huevo.",
+    "Recetas de Pastelería Saludable sin gluten, sin lácteos, sin azúcar y sin huevo.",
 };
 
 export default function RootLayout({ children }) {

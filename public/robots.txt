@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.pasteleria-saludable.com.ar/
+
+# Sitemaps
+Sitemap: https://www.pasteleria-saludable.com.ar/sitemap.xml

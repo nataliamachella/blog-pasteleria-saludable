@@ -1,10 +1,12 @@
 import getRecipes from "../lib/api";
 import Link from "next/link";
 import Image from "next/image";
-import Tag from "../components/tag";
+import { PageNotFoundError } from "next/dist/shared/lib/utils";
 
 export default function Ralated() {
   const data = getRecipes();
+
+  if (!data || data.length === 0) return PageNotFoundError;
 
   return (
     <section className="pt-20">
