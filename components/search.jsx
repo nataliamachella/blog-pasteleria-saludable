@@ -7,6 +7,7 @@ import {
   Hits,
   Highlight,
 } from "react-instantsearch-dom";
+import Image from "next/image";
 
 let firstLoad = true;
 
@@ -29,11 +30,17 @@ const Hit = ({ hit }) => (
   <ul role="list" className="p-6 divide-y divide-slate-200">
     <Highlight hit={hit} attribute="slug" />
     <li className="flex py-4 first:pt-0 last:pb-0">
-      <img className="h-10 w-10 rounded-full" src={`${hit.image}`} alt="" />
+      <Image
+        width={40}
+        height={40}
+        className="w-10 h-10 rounded-full"
+        src={`${hit.image}`}
+        alt=""
+      />
       <div class="ml-3 overflow-hidden">
         <a
           href={`https://www.pasteleria-saludable.com.ar/${hit.slug}`}
-          className=" text-sm font-medium text-[#643E17]"
+          className=" text-sm font-bold text-[#643E17]"
         >
           {hit.title}
         </a>

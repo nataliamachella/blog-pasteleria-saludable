@@ -1,6 +1,6 @@
 import React from "react";
 import Icons from "../components/icons";
-import Newslatter from "../components/newslatter";
+import Newslatter from "../components/Newslatter";
 
 export default function footer() {
   return (

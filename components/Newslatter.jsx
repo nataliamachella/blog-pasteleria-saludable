@@ -31,7 +31,7 @@ const addData = async (data) => {
   }
 };
 
-export default function newslatter() {
+export default function Newslatter() {
   const [email, setEmail] = useState("");
   const form = useRef();
 
