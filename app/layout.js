@@ -12,6 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
+      <meta
+        name="google-site-verification"
+        content="OaAQgpQi0IcX-YczQ3b7N-soIdW5ptqMdjDcTOHSkLw"
+      />
       <body className={poppins.className}>{children}</body>
     </html>
   );
