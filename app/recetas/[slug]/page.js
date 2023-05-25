@@ -3,8 +3,8 @@ import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import Layout from "../../../components/layout";
-import Ralated from "../../../components/ralated";
-import Article from "../../../components/article";
+import Ralated from "./ralated";
+import Article from "./article";
 
 const getRecipeContent = (slug) => {
   const folder = "data/recetas/";

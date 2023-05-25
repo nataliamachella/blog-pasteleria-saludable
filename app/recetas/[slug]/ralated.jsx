@@ -1,4 +1,4 @@
-import getRecipes from "../lib/api";
+import getRecipes from "../../../lib/api";
 import Link from "next/link";
 import Image from "next/image";
 import { PageNotFoundError } from "next/dist/shared/lib/utils";
