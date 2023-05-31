@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function article({ recipe }) {
   return (
     <div className="py-10">
-      <h1 className="font-bold text-4xl text-center pb-5">
+      <h2 className="font-bold text-4xl text-center pb-5">
         {recipe.title || "No Title"}
-      </h1>
+      </h2>
 
       <p className="text-gray-500 text-xl text-center max-w-prose">
         {recipe.description || "No Title"}
