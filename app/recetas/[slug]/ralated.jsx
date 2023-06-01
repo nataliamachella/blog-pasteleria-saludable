@@ -5,15 +5,11 @@ import Image from "next/image";
 export default async function Ralated() {
   const data = await getRecipes();
 
-  if (!data || data.length === 0)
-    return (
-      <h1 className="font-bold text-center text-2xl mt-8  text-[#643E17]">
-        Ups, no encontramos el contenido 🤦
-      </h1>
-    );
   return (
     <section className="pt-20">
-      <h1 className="font-bold text-3xl py-10 text-[#643E17]">Relacionado</h1>
+      <h1 className="font-bold text-3xl py-10 text-[#643E17]">
+        🧁 Más Recetas
+      </h1>
 
       <div className="flex flex-col gap-10">
         {data.map((value, index) => (
