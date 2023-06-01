@@ -6,7 +6,7 @@ import Image from "next/image";
 import { getRecipeContent } from "../../../lib/api";
 import { getRecipes } from "../../../lib/api";
 
-export default async function receta({ params }) {
+export default async function Page({ params }) {
   const { slug } = params;
   const recipe = await getRecipeContent(slug);
 
