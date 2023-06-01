@@ -1,6 +1,6 @@
 import React from "react";
 import Recipe from "./recipe";
-import getRecipes from "../lib/api";
+import { getRecipes } from "../lib/api";
 import { PageNotFoundError } from "next/dist/shared/lib/utils";
 
 export default async function listOfRecipes() {

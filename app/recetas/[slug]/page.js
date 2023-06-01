@@ -1,26 +1,11 @@
 import React from "react";
 
-import fs from "fs";
-import matter from "gray-matter";
 import Layout from "../../../components/layout";
 import Ralated from "./ralated";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";
 
-const getRecipeContent = (slug) => {
-  const folder = "data/recetas/";
-  const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, "utf8");
-  const matterResult = matter(content);
-  return {
-    title: matterResult.data.title,
-    date: matterResult.data.date,
-    categories: matterResult.data.categories,
-    description: matterResult.data.description,
-    image: matterResult.data.image,
-    content: matterResult.content,
-  };
-};
+import { getRecipeContent } from "../../../lib/api";
 
 export default async function receta({ params }) {
   const { slug } = params;
