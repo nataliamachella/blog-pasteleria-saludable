@@ -36,8 +36,12 @@ La preparación es muy sencilla. Deben mezclar bien todos los ingredientes en un
 
 Que los disfruten! 💕
 
-<br><hr>
-🌟 Si quieren ver el video 📹 del paso a paso lo pueden ver <strong><a href=
-"https://youtu.be/uiiAnM_Yv50" target="_blank">AQUÍ </a></strong>
+<br>
+
+👇 Aquí el video 📹 del paso a paso
+
+<br>
+
+<div><iframe width="560" height="315" src="https://www.youtube.com/embed/uiiAnM_Yv50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
 <hr>
