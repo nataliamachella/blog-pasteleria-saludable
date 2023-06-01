@@ -1,13 +1,16 @@
 import { getRecipes } from "../../../lib/api";
 import Link from "next/link";
 import Image from "next/image";
-import { PageNotFoundError } from "next/dist/shared/lib/utils";
 
 export default async function Ralated() {
   const data = await getRecipes();
 
-  if (!data || data.length === 0) return PageNotFoundError;
-
+  if (!data || data.length === 0)
+    return (
+      <h1 className="font-bold text-center text-2xl mt-8  text-[#643E17]">
+        Ups, no encontramos el contenido 🤦
+      </h1>
+    );
   return (
     <section className="pt-20">
       <h1 className="font-bold text-3xl py-10 text-[#643E17]">Relacionado</h1>

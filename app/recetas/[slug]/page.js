@@ -1,16 +1,14 @@
-import React from "react";
-
 import Layout from "../../../components/layout";
 import Ralated from "./ralated";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";
 
 import { getRecipeContent } from "../../../lib/api";
+import { getRecipes } from "../../../lib/api";
 
 export default async function receta({ params }) {
   const { slug } = params;
   const recipe = await getRecipeContent(slug);
-  if (!recipe) return "Contenido No Encontrado";
 
   return (
     <Layout>
@@ -43,4 +41,13 @@ export default async function receta({ params }) {
       ;
     </Layout>
   );
+}
+
+export async function getStatisPaths() {
+  const recipes = await getRecipes();
+  const paths = recipes.map((recipe) => ({
+    params: { slug: recipe.slug },
+  }));
+
+  return { paths, fallback: false };
 }
