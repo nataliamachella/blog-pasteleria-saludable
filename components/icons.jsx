@@ -13,7 +13,7 @@ export default function icons() {
         <FaFacebookSquare color="#643E17" size={"2em"} />
       </Link>
       <Link
-        href={"https://www.instagram.com/naty.pasteleriasaludable/"}
+        href={"https://www.instagram.com/pasteleriasaludable.naty/"}
         target="_blank"
         rel="noopener noreferrer"
       >
