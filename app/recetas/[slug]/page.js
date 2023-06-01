@@ -21,9 +21,9 @@ const getRecipeContent = (slug) => {
   };
 };
 
-export default function receta({ params }) {
+export default async function receta({ params }) {
   const { slug } = params;
-  const recipe = getRecipeContent(slug);
+  const recipe = await getRecipeContent(slug);
 
   return (
     <Layout>

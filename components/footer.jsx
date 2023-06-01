@@ -13,7 +13,14 @@ export default function footer() {
           </div>
 
           <p className="py-5 text-gray-400 text-center">
-            Copyright ©2023 Todos los derechos reservados
+            Copyright ©2023 Todos los derechos reservados. Creado con 💗 por{" "}
+            <a
+              href="https://github.com/nataliamachella"
+              target="_blank"
+              className=" font-semibold"
+            >
+              Natalia Machella
+            </a>
           </p>
         </div>
       </div>

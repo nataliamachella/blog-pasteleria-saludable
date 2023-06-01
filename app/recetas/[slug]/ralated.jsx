@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { PageNotFoundError } from "next/dist/shared/lib/utils";
 
-export default function Ralated() {
-  const data = getRecipes();
+export default async function Ralated() {
+  const data = await getRecipes();
 
   if (!data || data.length === 0) return PageNotFoundError;
 
