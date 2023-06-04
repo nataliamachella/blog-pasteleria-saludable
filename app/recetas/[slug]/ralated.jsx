@@ -7,7 +7,7 @@ export default async function Ralated() {
 
   return (
     <section className="pt-20">
-      <h1 className="font-bold text-3xl py-10 text-[#643E17]">
+      <h1 className="font-bold text-3xl py-10 text-[#643E17] ">
         🧁 Más Recetas
       </h1>
 
@@ -30,8 +30,8 @@ function Post({ data }) {
         <Link href={`/recetas/${slug}`}>
           <Image
             src={image || ""}
-            className="rounded"
-            width={300}
+            className="rounded w-[200px] h-[200px]"
+            width={200}
             height={200}
             alt={title}
           />
@@ -41,7 +41,7 @@ function Post({ data }) {
       <div className="flex flex-col">
         <Link
           href={`/recetas/${slug}`}
-          className="text-xl font-bold text-[#643E17]"
+          className="text-xl font-bold text-[#643E17] hover:text-[#643E17]/50"
         >
           {title || "No Title"}
         </Link>

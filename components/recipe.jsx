@@ -13,7 +13,7 @@ export default function recipe({ data }) {
         <Link href={`/recetas/${slug}`}>
           <Image
             src={image || ""}
-            className="rounded"
+            className="rounded w-[500px] h-[350px]"
             width={500}
             height={350}
             alt={title}
@@ -28,10 +28,12 @@ export default function recipe({ data }) {
           {date || ""}
         </div>
 
-        <div className="text-[#643E17] hover:text-[#643E17]/50 text-3xl font-bold text-center">
+        <div className="text-[#643E17] hover:text-[#643E17]/50 text-3xl font-bold text-center h-20">
           <Link href={`/recetas/${slug}`}>{title || ""}</Link>
         </div>
-        <p className="text-gray-500 py-3 text-center">{description || ""}</p>
+        <p className="text-gray-500 py-3 text-center h-24">
+          {description || ""}
+        </p>
       </div>
       <div className="flex flex-row justify-center items-center">
         <Button slug={slug} />

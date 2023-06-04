@@ -25,9 +25,10 @@ export default async function Page({ params }) {
           <div className="py-10">
             <Image
               src={recipe.image || "/"}
-              width={900}
-              height={600}
+              width={450}
+              height={450}
               alt={recipe.title}
+              className="w-[450px] h-[450px] mx-auto"
             />
           </div>
 

@@ -1,7 +1,7 @@
 ---
 title: "Alfajores de Chocolate y Maní"
 image: "https://res.cloudinary.com/djyqk8kcr/image/upload/v1685560126/350245020_257421933598152_5338795689155334782_n.webp_oeodan.jpg"
-description: "Alfajores veganos, sin gluten y sin huevo"
+description: "Alfajores veganos, sin gluten y sin huevo. Sin Gluten, sin huevo y sin lácteos."
 categories: ["Sin Gluten", "Sin Azúcar", "Sin Lácteos", "Sin Huevo"]
 date: "31.05.2023"
 ---
