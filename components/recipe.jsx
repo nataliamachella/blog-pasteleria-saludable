@@ -28,7 +28,7 @@ export default function recipe({ data }) {
           {date || ""}
         </div>
 
-        <div className="text-[#643E17] text-3xl font-bold text-center">
+        <div className="text-[#643E17] hover:text-[#643E17]/50 text-3xl font-bold text-center">
           <Link href={`/recetas/${slug}`}>{title || ""}</Link>
         </div>
         <p className="text-gray-500 py-3 text-center">{description || ""}</p>
